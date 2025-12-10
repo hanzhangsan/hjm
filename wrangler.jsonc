@@ -20,14 +20,16 @@
   //     "binding": "MY_BUCKET",
   //     "bucket_name": "my-bucket"
   //   }
-  // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  // ]
+  ,
+  "d1_databases": [
+    {
+      "binding": "MYSQL",
+      "database_name": "hjm",
+      "database_id": "dd3653d9-23b1-4908-b0b5-dc696ad63bed"
+    }
+  ]
+  // ,
   // "ai": {
   //   "binding": "AI"
   // },
