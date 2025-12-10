@@ -1,5 +1,7 @@
-import { Hono } from "hono";
-var app = new Hono
-app.post('/', (c) => {
-    return c.text('POST /')
-})
+import { serve } from '@hono/node-server'
+import { Hono , Context} from 'hono'
+
+export const login = async (c: Context) => {
+    const json = await c.req.json<{name:string}>()
+    return c.text(json.name)
+}
